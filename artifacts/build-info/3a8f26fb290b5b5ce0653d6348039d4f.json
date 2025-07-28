@@ -1,0 +1,222 @@
+{
+	"id": "3a8f26fb290b5b5ce0653d6348039d4f",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.30",
+	"solcLongVersion": "0.8.30+commit.73712a01",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"SmartParking.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.30;\r\n\r\nstruct ParkingSpot {\r\n    uint spotId;\r\n    address owner;\r\n    string location;\r\n    bool isAvailable;\r\n    address currentRenter;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"sources": {
+			"SmartParking.sol": {
+				"ast": {
+					"absolutePath": "SmartParking.sol",
+					"exportedSymbols": {
+						"ParkingSpot": [
+							12
+						]
+					},
+					"id": 13,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".30"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:24:0"
+						},
+						{
+							"canonicalName": "ParkingSpot",
+							"id": 12,
+							"members": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "spotId",
+									"nameLocation": "92:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 12,
+									"src": "87:11:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "87:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 5,
+									"mutability": "mutable",
+									"name": "owner",
+									"nameLocation": "113:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 12,
+									"src": "105:13:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "105:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 7,
+									"mutability": "mutable",
+									"name": "location",
+									"nameLocation": "132:8:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 12,
+									"src": "125:15:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 6,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "125:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 9,
+									"mutability": "mutable",
+									"name": "isAvailable",
+									"nameLocation": "152:11:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 12,
+									"src": "147:16:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bool",
+										"typeString": "bool"
+									},
+									"typeName": {
+										"id": 8,
+										"name": "bool",
+										"nodeType": "ElementaryTypeName",
+										"src": "147:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bool",
+											"typeString": "bool"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 11,
+									"mutability": "mutable",
+									"name": "currentRenter",
+									"nameLocation": "178:13:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 12,
+									"src": "170:21:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 10,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "170:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "ParkingSpot",
+							"nameLocation": "68:11:0",
+							"nodeType": "StructDefinition",
+							"scope": 13,
+							"src": "61:134:0",
+							"visibility": "public"
+						}
+					],
+					"src": "33:162:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

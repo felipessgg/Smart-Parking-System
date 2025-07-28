@@ -1,0 +1,238 @@
+{
+	"id": "8770319133651c8627817691339242f4",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.30",
+	"solcLongVersion": "0.8.30+commit.73712a01",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"ParkingToken.sol": {
+				"content": "struct ParkingSpot {\r\n    uint spotId;\r\n    address owner;\r\n    string location;\r\n    bool isAvailable;\r\n    address currentRenter;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> ParkingToken.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "ParkingToken.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.30;\"\n--> ParkingToken.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.30;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "ParkingToken.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"ParkingToken.sol": {
+				"ast": {
+					"absolutePath": "ParkingToken.sol",
+					"exportedSymbols": {
+						"ParkingSpot": [
+							11
+						]
+					},
+					"id": 12,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"canonicalName": "ParkingSpot",
+							"id": 11,
+							"members": [
+								{
+									"constant": false,
+									"id": 2,
+									"mutability": "mutable",
+									"name": "spotId",
+									"nameLocation": "31:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 11,
+									"src": "26:11:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 1,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "26:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 4,
+									"mutability": "mutable",
+									"name": "owner",
+									"nameLocation": "52:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 11,
+									"src": "44:13:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 3,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "44:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 6,
+									"mutability": "mutable",
+									"name": "location",
+									"nameLocation": "71:8:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 11,
+									"src": "64:15:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 5,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "64:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 8,
+									"mutability": "mutable",
+									"name": "isAvailable",
+									"nameLocation": "91:11:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 11,
+									"src": "86:16:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bool",
+										"typeString": "bool"
+									},
+									"typeName": {
+										"id": 7,
+										"name": "bool",
+										"nodeType": "ElementaryTypeName",
+										"src": "86:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bool",
+											"typeString": "bool"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 10,
+									"mutability": "mutable",
+									"name": "currentRenter",
+									"nameLocation": "117:13:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 11,
+									"src": "109:21:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 9,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "109:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "ParkingSpot",
+							"nameLocation": "7:11:0",
+							"nodeType": "StructDefinition",
+							"scope": 12,
+							"src": "0:134:0",
+							"visibility": "public"
+						}
+					],
+					"src": "0:134:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
